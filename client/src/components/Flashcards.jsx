@@ -29,7 +29,7 @@ function Flashcards() {
     const [selectedId, setSelectedId] = useState(null);
 
     function onFlashcardClick(id) {
-        setSelectedId(id);
+        setSelectedId(id !== selectedId ? id : null);
     }
   return (
     <div className="flashcards">
